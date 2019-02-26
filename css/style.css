@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family: HelveticaNeue-Medium;
+    font-size: 42px;    
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.subtitle {
+    font-family: HelveticaNeue-Light;
+    font-size: 24px;  
+    text-transform: uppercase;
+}
+h1 {
+    font-family: HelveticaNeue-Medium;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+p {
+    font-family: OpenSans-Light;
+    font-size: 18px;
+}
+a {
+    font-family: OpenSans-Light;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.text-light {
+    color: rgba(0,0,0,0.80);
+}
+.text-dark {
+    color: rgba(255, 255, 255, 0.9);
+}
+a.text-light {
+    color: rgba(0,89,234,0.90);
+}
+a.text-dark {    
+    color: rgba(77,144,255,0.90);
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: right;    
+    padding: 32px 136px;
+
+    z-index: 100;
+    opacity: 0;
+
+    animation-name: site-enter;
+    animation-delay: 0.75s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.nav-bar a {
+    margin-left: 26px;
+}
+
+.welcome-page {   
+    z-index: 0;
+    position: relative; 
+    height: 100vh;         
+}
+.welcome-page .content {         
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    flex-direction: row;            
+    padding-top: 10%;
+}
+.welcome-page #welcome-content-container,
+.welcome-page #welcome-logo {
+    opacity: 0;
+    animation-name: site-enter;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
