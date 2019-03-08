@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="40px" viewBox="0 0 27 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Door</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="EnterSiteButton" transform="translate(-20.000000, -22.000000)">
+            <g transform="translate(3.000000, 12.000000)" id="Door">
+                <g transform="translate(18.000000, 11.000000)">
+                    <rect id="Rectangle" fill="#000000" x="1" y="3" width="25" height="31"></rect>
+                    <polygon id="Rectangle" stroke="#FFFFFF" fill="#000000" points="0 3.45454545 20 0 20 38 0 34.2"></polygon>
+                    <polygon id="Rectangle" fill="#FFFFFF" points="14 19.3636364 16 19 16 23 14 22.6"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

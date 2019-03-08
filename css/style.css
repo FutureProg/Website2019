@@ -84,3 +84,58 @@ a.text-dark {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
+
+.entry-door {    
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    opacity: 0;    
+    text-align: center;
+    transform: translateX(-50%);    
+    animation: site-enter-fade;
+    animation-duration: 0.25s;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+    cursor: default;
+}
+.entry-door p {
+    margin: 0;  
+    transition: 0.25s ease;  
+}
+.entry-door .underline {
+    width: 100%; 
+    height: 0;
+    border: 1px solid rgba(0,0,0,0.80);
+    transition: 0.25s ease;
+    
+    animation: site-enter-underline-expand;
+    animation-delay: 0.75s;    
+    animation-duration: 0.25s;    
+}
+.entry-door:hover .underline {
+    transform: scaleX(1.5);
+}
+.entry-door:hover p {
+    margin-bottom: 5px;
+}
+.entry-door .surrounding-circle {        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;    
+    border-radius: 50%;    
+    padding: 18px;
+    width: 32px;
+    height: 32px;    
+    transition: 0.2s;
+}
+.entry-door .surrounding-circle img {
+    transition: 0.2s;
+}
+.entry-door .surrounding-circle:hover {    
+    transform: scale(1.25) translateY(8px);        
+    border-width: 10px;
+}
+.entry-door .surrounding-circle:hover img {
+    transform: scale(0.5); 
+}
