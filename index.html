@@ -32,13 +32,23 @@
 		<meta name="msapplication-TileColor" content="#3298CB">
 		<meta name="msapplication-TileImage" content="./images/faveicon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#3298CB">
+		<!---->
+
+		<!-- JQUERY -->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<!---->
+
+		<!-- Site Scripts -->
+		<script src="js/nav.js"></script>
+		<!---->
   </head>
   <body>
     <nav class="nav-bar">
       <a href="#contact" class="text-light">contact</a>
-      <a href="blog" class="text-light">blog</a>
+			<a href="blog" class="text-light">blog</a>
+			<a href="#welcome">top</a>
     </nav>
-    <section class="welcome-page">
+    <section id="welcome" class="welcome-page">
       <div class="content">
           <div id="welcome-content-container">
 						<div class="title">Nick Morrison</div>
@@ -50,6 +60,34 @@
 						<div class="underline"></div>	
 					</div>			
       </div>            
-    </section>
+		</section>
+		<section class="education-page">
+			<div class="title text-dark">Education</div>
+			<div class="content">
+				<div>
+					<h1 class="text-dark">Honours Business Informatics, B.A.Sc</h1>		
+					<div class="subtitle text-dark">September 2014 - April 2018</div>					
+					<p class="text-dark">
+						Completed a computer science specialization with co-op.<br/>
+						Participated in various clubs such as Forge@Mac and <br/>
+						PhaseOne (formerly HackItMac).<br/>
+					</p>
+				</div>
+				<div style="text-align: center;">
+						<img src="images/mcmaster.png" alt="Konrad Group"/>
+				</div>	
+				<div style="text-align: left;">
+						<img src="images/queens.png" alt="Konrad Group"/>
+				</div>
+				<div style="text-align: left">
+						<h1 class="text-dark">Masters in Management & AI, MMAI</h1>		
+						<div class="subtitle text-dark">September 2018 - August 2019</div>					
+						<p class="text-dark">
+								Member of the first MMAI class at the Smith School of Business. <br/>
+								AI theory and applications in a business context.
+						</p>
+				</div>
+			</div>					
+		</section>
   </body>
 </html>

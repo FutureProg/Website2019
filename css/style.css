@@ -2,6 +2,13 @@ body{
     margin: 0;
     padding: 0;
 }
+section {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;      
+    z-index: 0;
+    padding: 80px 250px 24px;
+}
 
 .title {
     font-family: HelveticaNeue-Medium;
@@ -17,6 +24,7 @@ body{
 h1 {
     font-family: HelveticaNeue-Medium;
     font-size: 24px;
+    margin: 0;
     text-transform: uppercase;
 }
 p {
@@ -46,9 +54,10 @@ a.text-dark {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: -100px;
     text-align: right;    
     padding: 32px 136px;
+    transition: 0.25s;
 
     z-index: 100;
     opacity: 0;
@@ -61,12 +70,28 @@ a.text-dark {
 }
 .nav-bar a {
     margin-left: 26px;
+    transition: 0.25s;
+}
+.nav-bar a[href='#welcome'] {    
+    transform: translateY(25px);
+    opacity: 0;    
+}
+.nav-bar.over-dark {
+    right: 0;
+}
+.nav-bar.over-dark a[href='#welcome'] {    
+    transform: translateY(0);
+    opacity: 1;
+}
+.nav-bar.over-dark a[href='blog'] {
+    transform: translate(25px);
+    opacity: 1;
 }
 
 .welcome-page {   
+    padding: 0;
     z-index: 0;
-    position: relative; 
-    height: 100vh;         
+    position: relative;        
 }
 .welcome-page .content {         
     display: flex;
@@ -83,6 +108,21 @@ a.text-dark {
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+}
+
+.education-page {
+    background: #191919;
+}
+.education-page .content {
+    display: grid;
+    grid-template-columns:  auto auto;
+    grid-template-rows: auto;    
+    row-gap: 120px;
+
+    margin-top: 150px;
+}
+.education-page .content img {
+    height: 206px;
 }
 
 .entry-door {    
