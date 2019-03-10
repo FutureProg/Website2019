@@ -1,13 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 section {
     box-sizing: border-box;
     position: relative;
     min-height: 100vh;      
     z-index: 0;
-    padding: 80px 250px 24px;
+    padding: 80px 250px 40px;
+}
+section:last-child {
+    padding-bottom: 180px;
 }
 
 .title {
@@ -30,6 +36,7 @@ h1 {
 p {
     font-family: OpenSans-Light;
     font-size: 18px;
+    line-height: 24px;
 }
 a {
     font-family: OpenSans-Light;
@@ -37,11 +44,27 @@ a {
     text-decoration: none;
 }
 
+a.button {
+    display: inline-block;
+    background: #FFFFFF;
+    padding: 22px 16px;
+
+    font-family: HelveticaNeue-Light;
+    font-size: 18px;
+    color: rgba(0,0,0,0.80);
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .text-light {
     color: rgba(0,0,0,0.80);
 }
 .text-dark {
     color: rgba(255, 255, 255, 0.9);
+}
+.text-dark a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
 }
 a.text-light {
     color: rgba(0,89,234,0.90);
@@ -110,10 +133,12 @@ a.text-dark {
     animation-fill-mode: forwards;
 }
 
-.education-page {
+.education-page, .career-page, .projects-page {
     background: #191919;
 }
-.education-page .content {
+.education-page .content,
+.career-page .content,
+.projects-page .content {
     display: grid;
     grid-template-columns:  auto auto;
     grid-template-rows: auto;    
@@ -123,6 +148,12 @@ a.text-dark {
 }
 .education-page .content img {
     height: 206px;
+}
+
+.projects-page .content {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    column-gap: 144px;    
 }
 
 .entry-door {    
