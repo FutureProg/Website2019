@@ -13,6 +13,8 @@ $(document).ready(() => {
 	$(window).scroll(updateNavState);
 
 	$(".entry-door").click(() => {
-		$('#education').scrollTo();
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $("#education").offset().top
+		}, 'fast', "linear");
 	})
 })
