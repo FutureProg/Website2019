@@ -140,9 +140,10 @@ a.text-dark {
 .career-page .content,
 .projects-page .content {
     display: grid;
-    grid-template-columns:  auto auto;
+    grid-template-columns:  1fr 1fr;        
     grid-template-rows: auto;    
-    row-gap: 120px;
+    column-gap: 120px;
+    row-gap: 52px;
 
     margin-top: 150px;
 }
