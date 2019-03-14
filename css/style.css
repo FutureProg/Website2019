@@ -133,7 +133,8 @@ a.text-dark {
     animation-fill-mode: forwards;
 }
 
-.education-page, .career-page, .projects-page {
+.education-page, .career-page, .projects-page,
+.contacts-page {
     background: #191919;
 }
 .education-page .content,
@@ -146,6 +147,26 @@ a.text-dark {
     row-gap: 52px;
 
     margin-top: 150px;
+}
+.contacts-page .content {
+    padding-top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;        
+}
+.contacts-page .content div {
+    margin-bottom: 52px;
+}
+.contacts-page .content .social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts-page .content .social-icons a {
+    display: block;
+    margin: 24px;
 }
 .education-page .content img {
     height: 206px;
