@@ -10,7 +10,7 @@ section {
     position: relative;
     min-height: 100vh;      
     z-index: 0;
-    padding: 80px 250px 40px;
+    padding: 80px 15% 40px;
 }
 section:last-child {
     padding-bottom: 180px;
@@ -118,6 +118,7 @@ a.text-dark {
 }
 .welcome-page .content {         
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;    
     flex-direction: row;            
@@ -140,14 +141,18 @@ a.text-dark {
 .education-page .content,
 .career-page .content,
 .projects-page .content {
-    display: grid;
-    grid-template-columns:  1fr 1fr;        
-    grid-template-rows: auto;    
-    column-gap: 120px;
-    row-gap: 52px;
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-around; 
+    flex-wrap: wrap;    
 
-    margin-top: 150px;
+    margin-top: 150px;    
 }
+.item-container {
+    margin: 20px;
+    margin-bottom: 52px;
+}
+
 .contacts-page .content {
     padding-top: 25%;
     display: flex;
@@ -162,7 +167,7 @@ a.text-dark {
 .contacts-page .content .social-icons {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
 }
 .contacts-page .content .social-icons a {
     display: block;
@@ -171,12 +176,13 @@ a.text-dark {
 .education-page .content img {
     height: 206px;
 }
-
-.projects-page .content {
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    column-gap: 144px;    
+.education-page .content .image-container,
+.career-page .content .image-container,
+.projects-page .content .image-container {
+    margin-bottom: 52px;
+    text-align: center;
 }
+
 
 .entry-door {    
     position: absolute;
@@ -231,4 +237,22 @@ a.text-dark {
 }
 .entry-door .surrounding-circle:hover img {
     transform: scale(0.5); 
+}
+
+
+@media screen and (max-width: 700px) {
+    .welcome-page {
+        display: flex;
+    }
+    .welcome-page .content {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .image-container img !important {
+        width: 100%;
+        height: auto;
+    }
 }

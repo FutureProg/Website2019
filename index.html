@@ -2,7 +2,10 @@
   <head>
     <title>Nick Morrison</title>
     <link href="css/style.css" rel="stylesheet" />
-    <link href="css/animations.css" rel="stylesheet" />
+		<link href="css/animations.css" rel="stylesheet" />
+		<meta charset="utf-8">		
+		<meta content="Creating What Matters" name="description">
+		<meta name="viewport" content="width=device-width">	
 
     <!--Preview Image-->
 		<meta name="twitter:card" content="summary_large_image">
@@ -31,7 +34,7 @@
 		<link rel="manifest" href="./images/faveicon/manifest.json">
 		<meta name="msapplication-TileColor" content="#3298CB">
 		<meta name="msapplication-TileImage" content="./images/faveicon/ms-icon-144x144.png">
-		<meta name="theme-color" content="#3298CB">
+		<meta name="theme-color" content="#000000">
 		<!---->
 
 		<!-- JQUERY -->
@@ -65,29 +68,33 @@
 		<section id="education" class="education-page">
 			<div class="title text-dark">Education</div>
 			<div class="content">
-				<div style="text-align: left;">
+				<div class="item-container">
+					<div class="image-container">
 							<img src="./images/mcmaster.png" alt="Konrad Group"/>
-				</div>	
-				<div style="text-align: left;">
-						<img src="./images/queens.png" alt="Konrad Group"/>
+					</div>	
+					<div>
+							<h1 class="text-dark">Honours Business Informatics, B.A.Sc</h1>		
+							<div class="subtitle text-dark">September 2014 - April 2018</div>					
+							<p class="text-dark">
+								Completed a computer science specialization with co-op.<br/>
+								Participated in various clubs such as Forge@Mac and <br/>
+								PhaseOne (formerly HackItMac).<br/>
+							</p>
+					</div>
 				</div>
-				<div>
-					<h1 class="text-dark">Honours Business Informatics, B.A.Sc</h1>		
-					<div class="subtitle text-dark">September 2014 - April 2018</div>					
-					<p class="text-dark">
-						Completed a computer science specialization with co-op.<br/>
-						Participated in various clubs such as Forge@Mac and <br/>
-						PhaseOne (formerly HackItMac).<br/>
-					</p>
-				</div>				
-				<div style="text-align: left">
+				<div class="item-container">
+					<div class="image-container">
+							<img src="./images/queens.png" alt="Konrad Group"/>
+					</div>								
+					<div style="text-align: left">
 						<h1 class="text-dark">Masters in Management & AI, MMAI</h1>		
 						<div class="subtitle text-dark">September 2018 - August 2019</div>					
 						<p class="text-dark">
 								Member of the first MMAI class at the Smith School of Business. <br/>
 								AI theory and applications in a business context.
 						</p>
-				</div>
+					</div>
+				</div>							
 			</div>					
 		</section>
 		<!-- END OF EDUCATION SECTION -->
@@ -99,28 +106,32 @@
 					<a href="./resume.pdf" download class="button">Download Resumé</a>				
 			</div>			
 			<div class="content">
-					<div style="text-align: left">
-							<img src="./images/munvo.png" alt="Konrad Group" height="238px"/>
-					</div>	
-					<div style="text-align: left;">
-							<img src="./images/konradgroup_logo.png" alt="Konrad Group" height="238px"/>
+					<div class="item-container">
+						<div class="image-container">
+								<img src="./images/munvo.png" alt="Konrad Group" height="238px"/>
+						</div>	
+						<div>
+							<h1 class="text-dark">Munvo</h1>								
+							<div class="subtitle text-dark">May 2017 - August 2017</div>					
+							<p class="text-dark">
+								Software Developer Intern at <a href="https://munvo.com/">Munvo</a>. Designed and developed<br/>
+								front-end applications that assisted clients with their daily tasks. 
+							</p>
+						</div>
 					</div>
 					<div>
-						<h1 class="text-dark">Munvo</h1>								
-						<div class="subtitle text-dark">May 2017 - August 2017</div>					
-						<p class="text-dark">
-							Software Developer Intern at <a href="https://munvo.com/">Munvo</a>. Designed and developed<br/>
-							front-end applications that assisted clients with their daily tasks. 
-						</p>
-					</div>					
-					<div>
-						<h1 class="text-dark">Konrad</h1>								
-						<div class="subtitle text-dark">May 2018 - Present</div>					
-						<p class="text-dark">
-							Software Developer at <a href="https://www.konrad.com/">Konrad</a>. Aided in the front-end<br/>
-							development of mobile and web applications.							
-						</p>
-					</div>																
+						<div class="image-container">
+								<img src="./images/konradgroup_logo.png" alt="Konrad Group" height="238px"/>
+						</div>										
+						<div>
+							<h1 class="text-dark">Konrad</h1>								
+							<div class="subtitle text-dark">May 2018 - Present</div>					
+							<p class="text-dark">
+								Software Developer at <a href="https://www.konrad.com/">Konrad</a>. Aided in the front-end<br/>
+								development of mobile and web applications.							
+							</p>
+						</div>	
+					</div>																														
 			</div>			
 		</section>
 		<!--- END OF CAREER SECTION -->
@@ -132,38 +143,50 @@
 				<a href="https://www.github.com/FutureProg"><img src="images/icons/Github-white.svg" width="48px" style="float:right;"/></a>
 			</div>			
 			<div class="content">
-					<img src="./images/caster_screenshot.png" height="280px"/>
-					<div>
-						<h1 class="text-dark">Caster</h1>
-						<div class="subtitle text-dark">January 2015</div>
-						<p class="text-dark">
-							Podcast discovery is difficult for both creators and listeners; <br/>
-							creators have to use multiple tools and platforms to interact<br/>
-							with their listeners, and RSS feeds make for difficult discovery of<br/>
-							new content. Caster was created to help fix these issues<br/> 
-							through a web platform and mobile app.<br/>
-						</p>
+					<div class="item-container">
+							<div class="image-container">
+									<img src="./images/caster_screenshot.png" height="280px"/>
+							</div>					
+							<div>
+								<h1 class="text-dark">Caster</h1>
+								<div class="subtitle text-dark">January 2015</div>
+								<p class="text-dark">
+									Podcast discovery is difficult for both creators and listeners; <br/>
+									creators have to use multiple tools and platforms to interact<br/>
+									with their listeners, and RSS feeds make for difficult discovery of<br/>
+									new content. Caster was created to help fix these issues<br/> 
+									through a web platform and mobile app.<br/>
+								</p>
+							</div>
 					</div>
-					<img src="./images/stick2it_screenshot.png" height="280px"/>
-					<div>
-						<h1 class="text-dark">Stick2It</h1>
-						<div class="subtitle text-dark">December 2017</div>
-						<p class="text-dark">
-							A web application created with the purpose of organizing and<br/> 
-							breaking down tasks to help increase productivity. 
-						</p>
+					<div class="item-container">
+							<div class="image-container">
+								<img src="./images/stick2it_screenshot.png" height="280px"/>
+							</div>					
+							<div>
+								<h1 class="text-dark">Stick2It</h1>
+								<div class="subtitle text-dark">December 2017</div>
+								<p class="text-dark">
+									A web application created with the purpose of organizing and<br/> 
+									breaking down tasks to help increase productivity. 
+								</p>
+							</div>
 					</div>
-					<img src="./images/sourcesweep_mock.png" height="280px"/>
-					<div>
-						<h1 class="text-dark">Source Sweep</h1>
-						<div class="subtitle text-dark">March 2019</div>
-						<p class="text-dark">
-							A web application with an idea originating from a class project: find a way for
-							AI to help journalism. The tool finds the sources of any article given to it through 
-							items mentioned or linked in the article. With this tool, journalists should more 
-							easily be able to differentiate between reliable and fake articles. The current
-							screen on the left is a mockup of the source tree. 
-						</p>
+					<div class="item-container">
+						<div class="image-container" style="text-align: center">
+								<img src="./images/sourcesweep_mock.png" height="280px"/>
+						</div>					
+						<div>
+							<h1 class="text-dark">Source Sweep</h1>
+							<div class="subtitle text-dark">March 2019</div>
+							<p class="text-dark">
+								A web application with an idea originating from a class project: find a way for<br/>
+								AI to help journalism. The tool finds the sources of any article given to it through<br/> 
+								items mentioned or linked in the article. With this tool, journalists should more <br/>
+								easily be able to differentiate between reliable and fake articles. The current<br/>
+								screen on the left is a mockup of the source tree. 
+							</p>
+						</div>
 					</div>
 			</div>			
 		</section>
