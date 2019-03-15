@@ -17,18 +17,18 @@ section:last-child {
 }
 
 .title {
-    font-family: HelveticaNeue-Medium;
+    font-family: HelveticaNeue-Medium, Helvetica-Medium, sans-serif;    
     font-size: 42px;    
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 .subtitle {
-    font-family: HelveticaNeue-Light;
+    font-family: HelveticaNeue-Light, Helvetica-Light, sans-serif;
     font-size: 24px;  
     text-transform: uppercase;
 }
 h1 {
-    font-family: HelveticaNeue-Medium;
+    font-family: HelveticaNeue-Medium, Helvetica-Medium, sans-serif;    
     font-size: 24px;
     margin: 0;
     text-transform: uppercase;
